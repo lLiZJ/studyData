@@ -31,4 +31,5 @@
 * 但是在传递参数的时候如果是 **url?userName=zhangsan&userName=wangwu** 时怎么办呢?其实在实际roleList参数入参的数据为“zhangsan,wangwu”，即多个数据之间使用“，”分割；我们应该使用如下方式来接收多个请求参数：
     * `public String requestparam8(@RequestParam(value="userName") String []  userNames)`
     * `public String requestparam8(@RequestParam(value="list") List<String> list)`
+## @RequestParam和@RequestBody这两个注解是可以同时使用的
 
